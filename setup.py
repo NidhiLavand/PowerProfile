@@ -1,18 +1,22 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
+
 setup(
-    name="Power_Profile",
+    name="energy-meter",
     version="0.1.0",
     author="Nidhi Lavand",
     author_email="nidhilavand@gmail.com",
-    description="Estimate power usage, energy usage and carbon emissions of Python programs",
-    long_description=open("README.md", encoding="utf-8").read(),
+    description="Measure CPU/GPU energy, power, and carbon emissions for ML workloads.",
+    long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/NidhiLavand/PowerProfile.git",
     packages=find_packages(),
     install_requires=[
-        "psutil>=5.9.0"
+        "psutil",
+        "pynvml",
+        "torch",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.8",
 )
 
