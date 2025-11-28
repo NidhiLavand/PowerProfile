@@ -91,25 +91,29 @@ The `meter.summary()` method returns a dictionary containing high-level metrics 
 
 ```json
 {
-    'batch_summary': {'count': 6,
-                   'mean_carbon_g': 7.797722575701774,
-                   'mean_duration_s': 0.31085503101348877,
-                   'mean_energy_j': 62.38178060561419,
-                   'total_carbon_g': 46.78633545421064,
-                   'total_duration_s': 1.8651301860809326,
-                   'total_energy_j': 374.2906836336851},
- 'carbon_intensity_g_per_kwh': 450.0,
- 'device': 'cpu',
- 'epoch_summary': {'count': 2,
-                   'mean_carbon_g': 28.2488715724647,
-                   'mean_duration_s': 0.967894434928894,
-                   'mean_energy_j': 225.9909725797176,
-                   'total_carbon_g': 56.4977431449294,
-                   'total_duration_s': 1.935788869857788,
-                   'total_energy_j': 451.9819451594352},
- 'gpu_name': None,
- 'num_batches': 6,
- 'num_epochs': 2
+    "device": "cpu",
+    "gpu_name": null,
+    "carbon_intensity_g_per_kwh": 450.0,
+    "num_batches": 6,
+    "num_epochs": 2,
+    "batch_summary": {
+        "count": 6,
+        "mean_duration_s": 0.311,
+        "mean_energy_j": 62.382,
+        "mean_carbon_g": 7.798,
+        "total_duration_s": 1.865,
+        "total_energy_j": 374.291,
+        "total_carbon_g": 46.786
+    },
+    "epoch_summary": {
+        "count": 2,
+        "mean_duration_s": 0.968,
+        "mean_energy_j": 225.991,
+        "mean_carbon_g": 28.249,
+        "total_duration_s": 1.936,
+        "total_energy_j": 451.982,
+        "total_carbon_g": 56.498
+    }
 }
 ```
 
