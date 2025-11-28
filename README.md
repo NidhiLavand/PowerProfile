@@ -37,7 +37,7 @@ pip install psutil
 pip install torch
 ```
 
-## 📖 Usage Example
+## Usage Example
 
 The primary class is `EnergyMeter`, which you initialize once and use its context managers (`.batch()` and `.epoch()`) to scope your measurements.
 
@@ -80,7 +80,7 @@ import pprint
 pprint.pprint(meter.summary())
 ```
 
-## 📊 Summary Output Structure
+## Summary Output Structure
 
 The `meter.summary()` method returns a dictionary containing high-level and aggregated metrics:
 
@@ -107,7 +107,8 @@ Overall summary:
  'num_batches': 6,
  'num_epochs': 2}
     
-}
+}}
+
 ```
 
 ## How Measurement Works
